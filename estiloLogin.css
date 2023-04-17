@@ -1,26 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-*{
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;  /*Com esse comando qualquer largura que estiver sobrando, encolherá*/
-}
-/*Defini margin, top e left como 0*/
 body {
     margin: 0;
-    top: 0;
-    left: 0;
-}
-/*Configuração do local da seta*/
-.setaDiv {
-    width: 100%;
-    display: flex;
-    justify-content: left;
-    align-items: left;
-}
-/*Configuração do tamanho da seta*/ 
-.seta{
-    width: 45px;
-    height: 45px;
-    margin-top: 8px; /*O quão distante é para ficar no topo*/
 }
 /*Configuração da div maior*/
 .tela-login{
@@ -41,11 +20,9 @@ body {
     flex-direction: column;
 
 }
-/*Define a largura da imagem*/
-.mulheroculos{
-    width: 35vw;
+.left-login > h1 {
+    color: white;
 }
-/*Alinhando o card-login*/
 .right-login{
     width: 85vh;
     height: 70vh;
@@ -93,14 +70,6 @@ body {
     outline: none;
     box-sizing: border-box;
 }
-/*Estilo de 'Não possui uma conta?'*/
-.card-login a {
-    color:  white;
-    font-weight: 800;
-    padding-top: 9px;
-    text-decoration: none;
-}
-/*Definindo o estilo das legendas nome e senha*/
 .textfield > label {
     color: #f0ffffde;
     margin-bottom: 10px;
@@ -124,33 +93,4 @@ body {
     background-color: white;
     cursor: pointer;
     box-shadow: 0px 10px 40px -12px #56a5d6 ;
-}
-/*Deixando responsivo, para celular*/
-@media only screen and (max-width:950px){ /*Informando que enquanto for na tela uma largura de 950px, irá adicionar os elementos abaixo*/
-    .card-login{
-        width: 85%;
-    }
-}
-/*Deixando alinhado para celular, em coluna, ajustando as larguras*/
-@media only screen and (max-width:600px){
-    .tela-login{
-        flex-direction: column;
-    }
-    .left-login > h1{
-        display: none;
-    }
-    .left-login{
-        width: 95%;
-        height: auto;
-    }
-    .right-login{
-        width: 95%;
-        height: auto;
-    }
-    .mulheroculos{
-        width: 65vw;
-    }
-    .card-login{
-        width: 90;
-    }
 }
